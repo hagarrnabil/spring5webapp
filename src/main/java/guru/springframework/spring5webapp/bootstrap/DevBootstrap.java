@@ -50,7 +50,7 @@ public class DevBootstrap implements ApplicationListener<ContextRefreshedEvent> 
         publisher2.setName("Worx");
         publisher2.setAddress("12th St.");
         publisherRepository.save(publisher2);
-        
+
         Author rod = new Author("Rod", "Johnson");
         Book noEJB = new Book("J2EEE Development without EJB", "2344", publisher2);
         rod.getBooks().add(noEJB);
